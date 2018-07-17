@@ -1,5 +1,8 @@
 html {
   box-sizing: border-box;
+  font-size: 175%;
+  font-weight: 300;
+  line-height: 1.3;
 }
 
 *,
@@ -9,7 +12,7 @@ html {
 }
 
 body {
-  margin: 0;
+  
 }
 
 /* Responsive Images */
@@ -63,26 +66,18 @@ ul {
   list-style: none;
 }
 
-/* 
- * Completely resets form items
- * ----------------------------
- * Super hard reset that removes all borders
- * and radiuses of all form items (including
- * checkboxes and radios)
- */
-
 input,
 textarea,
 button {
-  border: 0;
-  border-radius: 0;
-  background-color: transparent;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  outline: none;
-  appearance: none;
-  text-align: left;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    outline: none;
+    appearance: none;
+    text-align: left;
 }
 
 input:hover,
@@ -94,24 +89,19 @@ textarea:focus,
 button:hover,
 button:active,
 button:focus {
-  outline: none;
+    outline: none;
 }
 
 :root {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-html {
-  font-size: 175%;
-  font-weight: 300;
-  line-height: 1.3;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
 }
 
 .calculator {
@@ -128,11 +118,11 @@ body {
 }
 
 .calculator_display {
-  background-color: #000;
-  color: #fff;
-  font-size: 1.5em;
-  padding: 0.5em 0.75em;
-  text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0.5em 0.75em;
+    text-align: center;
 }
 
 .calculator_keys {
@@ -146,17 +136,15 @@ body {
     background: #ff7033;
     grid-column: 1;
     grid-row: 1 / span 5;
-}
-
-.key-do-calc {
-    background: #666;
-    grid-column: 2;
-    grid-row: 1 / span 5;
-    text-align: center;
+    font: #fff;
 }
 
 .key-number {
     text-align: center;
+    padding: 0.5em;
+}
+
+.key-operation {
     padding: 0.5em;
 }
 
